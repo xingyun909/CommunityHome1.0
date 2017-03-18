@@ -1,0 +1,47 @@
+<!-- <div id="jinrepair"> -->
+    <table id="jintabl" ng-controller="orderCtrl">
+        <tr>
+            <th width="40px">序号</th>
+            <th width="280px">描述</th>
+            <th width="160px">申报时间</th>
+            <th width="230px">申报地址</th>
+            <th width="140px">操作</th>
+        </tr>
+        <tr ng-repeat="repair in repairData">
+            <td>{{$index+1}}</td>
+            <td><a id="jina1" ng-click=showDetail($index) style="cursor:pointer"> {{repair.Title}}</a></td>
+            <td>{{repair.dateTime}}</td>
+            <td>{{repair.address}}</td>
+            <td>
+                <!-- <span class="jinsu1" title= "已完成" style="cursor:pointer"></span> -->
+                <span class="jinsu2" title={{repair.state}} style="cursor:pointer"></span>
+                <button ng-click=handle($index)>处理</button>
+            </td>
+        </tr>
+    </table>
+     <div id="jindetails">
+        <p>报修详情<p>
+        <div class="jindeta">
+            <h4>报修详情：</h4>
+            {{detail.Title}}
+        </div>
+        <div class="jindeta">
+            <h4>详情描述：</h4>
+            <div class="jintex">
+            {{detail.Content}}
+            </div>
+        </div>
+        <div class="jindeta">
+            <h4>现场图片：</h4>
+            <img ng-src={{detail.repairImg}}/>
+        </div>
+        <div class="jindeta">
+            <h4>地&nbsp &nbsp &nbsp &nbsp址：</h4>
+            {{detail.address}}
+            <br/>
+            <h4>现场图片：</h4>
+            万先生  125 5456 6556
+        </div>
+        <button class="jinfinal">确定</button>
+    </div> 
+<!-- </div> -->

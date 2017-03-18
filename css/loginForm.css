@@ -1,0 +1,61 @@
+*{margin: 0;
+    padding: 0;}
+.parent{
+    height: 667px;
+    width: 100%;
+    overflow: hidden;
+    background: url("../images/login/background.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.logo{
+    width:270px;
+    height:200px;
+    background: url("../images/login/icon.png");
+    background-position:-244px -186px;
+    position:absolute;
+    left:39.8%;
+    top:50px;
+}
+.parent .title{
+    font-family: Microsoft YaHei,sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+    color: #ffffff;
+    text-align:center;
+    margin-top:250px;
+}
+form input {
+    height: 25px;
+    width: 500px;
+    border: none;
+    font-family: Microsoft YaHei,sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 10px;
+}
+.account{
+    position: absolute;
+    top: 320px;
+    left:31%;
+}
+.password{
+    position: absolute;
+    top: 378px;
+    left:31%;
+}
+form .login{
+    height: 40px;
+    width: 320px;
+    background-color: #3399ff;
+    border: none;
+    font-family: Microsoft YaHei,sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    top: 500px;
+    left:38%;
+}
+

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body,ul,li,p,form,img,div,input{margin:0;padding:0}
+ul,li{list-style:none;}
+a{text-decoration:none;color:black;}
+#jinheader{
+    margin-top: 15px;
+    height:65px;
+    width:100%;
+    border-bottom: 3px solid #a0a0a0;
+}
+#jinadmin{
+    float:right;
+    color:#888787;
+    margin:30px 10px 10px;
+}
+#jinadmin img{
+    width:18px;
+    padding-top: 5px;
+}
+li{
+    background-color:#2b8de5;
+    color:#ffffff;
+    height:50px;
+    line-height:50px;
+    border-bottom:1px solid #ffffff;
+    width:20%;
+    text-align:center;
+    font-size: 18px;
+}
+.jintabin{
+    background-color:#ffffff;
+    color:#2b8de5;
+}
+/*右侧整个报修订单*/
+.jinitem{
+    width:80%;
+    position:absolute;
+    top:82px;
+    left:20%;
+    border-left:3px solid #a0a0a0;
+    height:600px;
+}
+.jinhide{display:none;}
+#jinrepair{
+    height:500px;
+}
+/*table表格*/
+#jintabl{
+    margin:20px;
+    font-family: verdana,arial,sans-serif;
+    border-collapse: collapse;
+}
+#jintabl th {
+    font-size:15px;
+    color:white;
+    padding: 12px 15px;
+    background-color:#67B2F5;
+    border:1px solid white;
+}
+#jintabl td {
+    font-size:13px;
+    padding: 11px 30px;
+    background-color: #F0F7FE;
+    border:1px solid white;
+}
+#jintabl span{
+    width:23px;
+    display:block;
+    float:left;
+    margin:0px 9px;
+}   
+.jinsu1{
+    height:15px;
+    /*background:url("../images/zong.png");*/
+    background-position:-8px 0px;
+}
+.jinsu1fin{
+    height:15px;
+    /*background:url("../images/zong.png");*/
+    background-position:-8px -20px;
+}
+.jinsu2{
+    height:22px;
+    /*background:url("../images/zong.png");*/
+    background-position:-8px -40px;
+}
+
+#jindetails{
+    width:57%;
+    border:1px solid #a0a0a0;
+    background:white;
+    position:absolute;
+    top:110px;
+    left:25%;
+    z-index:2;
+    display:none;
+}
+#jindetails p{
+    font-size:18px;
+    text-align: center;
+    font-weight: bold;
+}
+#jindetails h4{
+    display:inline;
+}
+/*报修详情内项目*/
+.jindeta{
+    border-bottom:1px solid #a0a0a0;
+    margin:9px;
+    padding:2px;
+    float:left;
+    width:96%;
+}
+.jindeta .tex{
+    float:right;
+    width:88%;
+    text-indent:2em;
+}
+.jindeta img{
+    width:88%;
+    height:120px;
+    float:right;
+}
+/*报修详情确定按钮*/
+.jinfinal{
+    width:150px;
+    height:36px;
+    background:#5eadf3;
+    border:0px;
+    border-radius:7px;
+    margin:15px 38%;
+    color:white;
+    font-size:17px;
+}
+.orderbtn{
+    background-color: #5eadf3;
+    border:1px solid white;
+    box-shadow:-10px 0 10px grey;
+}

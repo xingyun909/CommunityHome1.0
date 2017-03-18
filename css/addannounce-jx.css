@@ -1,0 +1,142 @@
+.test_box {
+    width: 600px;
+    min-height: 120px;
+    max-height: 300px;
+    _height: 120px;
+    padding: 3px;
+    border: 1px solid #a0b3d6;
+    font-size: 15px;
+}
+
+.add-jx>td {
+    padding: 10px;
+}
+
+.add-jx {
+    margin: 20px;
+}
+
+.btn-jx {
+    margin-left: 300px;
+}
+
+.active {
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+.upc {
+    color: #2b8de5;
+}
+
+.announce {
+    width: 100%;
+    margin-right: 10px;
+}
+
+table {
+    margin: 5px;
+}
+
+#tb0 {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+
+button {
+    border: 0;
+    background: none;
+}
+
+.manage {
+    background-color: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.manage-true {
+    background-color: #67b2f5;
+    color: white;
+}
+
+.manage-false {
+    background-color: none;
+    color: black;
+}
+
+#tb {
+    width: 100%;
+    padding: 3px;
+}
+
+.tb1 {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    padding: 3px;
+    text-align: center;
+}
+
+th {
+    background-color: #67b2f5;
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+    padding: 12px 35px;
+    font-size: 15px;
+}
+
+.cc {
+    padding: 11px 35px;
+}
+
+p {
+    text-align: center;
+    font-family: '微软雅黑';
+}
+
+.tb2 {
+    background: #f0f7fe;
+}
+
+.jximg {
+    width: 20px;
+}
+
+.jxa {
+    width: 20px;
+    height: 20px;
+}
+
+.jxa-true {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.jxa-false {
+    background-color: #67b2f5;
+    border: 1px solid white;
+}
+
+#pic {
+    width: 304px;
+    height: 215px;
+    border: 1px solid #d2d2d2;
+    background: white;
+    position: relative;
+}
+
+#pic img {
+    height: 215px;
+    width: 304px;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background: #2b8de5;
+    border-radius: 10px;
+}

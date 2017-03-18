@@ -1,0 +1,152 @@
+<script src="lib/jquery.form.js"></script>
+<!--公告管理-->
+<div ng-show="contentj==0">
+    <!--公告管理首页-->
+    <div ng-show="main2&&main3">
+        <table id="tb0">
+            <tr>
+                <td>
+                    <button class="manage manage-{{change==1}}" ng-mouseup="change=1" ng-init="change=0" ng-click="add()">新增</button>
+                </td>
+                <td>
+                    <button class="manage manage-{{change==2}}" ng-mouseup="change=2" ng-click="del()">删除</button>
+                </td>
+            </tr>
+        </table>
+        <table id="tb">
+            <tr class="tb1">
+                <th>
+                    <div class="jxa jxa-{{check}}" ng-click="changeall()"></div>
+                </th>
+                <th>
+                    <p>序号</p>
+                </th>
+                <th>
+                    <p>标题</p>
+                </th>
+                <th>
+                    <p>发布时间</p>
+                </th>
+                <th>
+                    <p>发布人</p>
+                </th>
+                <th colspan="2">
+                    <p>操作</p>
+                </th>
+            </tr>
+            <tbody class="tb2" ng-repeat="x in announceitem">
+                <tr>
+                    <td class="cc">
+                        <div class="jxa jxa-{{x.check}}" ng-click="zichange($index)"></div>
+                    </td>
+                    <td class="cc">
+                        <p>{{$index+1}}</p>
+                    </td>
+                    <td class="cc">
+                        <p>{{x.title}}</p>
+                    </td>
+                    <td class="cc">
+                        <p>{{x.dateTime}}</p>
+                    </td>
+                    <td class="cc">
+                        <p>{{x.pman}}</p>
+                    </td>
+                    <td class="cc">
+                        <button ng-click="revise($index)" value="{{$index}}"><img class="jximg" src="images/revise.jpg" /></button>
+                    </td>
+                    <td class="cc">
+                        <button ng-click="del2($index)"><img class="jximg" src="images/del.jpg" /></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--增加公告-->
+    <div ng-show="!main2">
+        <ol class="breadcrumb">
+            <a class="upc" ng-click="add()"><u>社区公告</u>/</a><u>新增公告</u>
+        </ol>
+        <form id="formid">
+            <table class="add-jx">
+                <tr>
+                    <td>
+                        <label>标题</label>
+                    </td>
+                    <td>
+                        <div class="col-sm-5">
+                            <input type="text" name="title" class="form-control" id="firstname" placeholder="请输入标题">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>内容</label>
+                    </td>
+                    <td>
+                        <textarea id="firstname" name="content" class=test_box contenteditable=true></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="control-label">请添加图片</label>
+                    </td>
+                    <td>
+                        <div id="pic" ng-controller="UploaderController">
+                            <label for="picture"><img for="d" ng-src="{{imageSrc}}" src="images/addpic.jpg" /></label>
+                            <input type="file" id="picture" file-model="myFile" hidden name="img">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            </br>
+            </br>
+            <input type="submit" class="btn btn-primary btn-jx" " value="提交 "  />      
+        </form>
+    </div>
+    <!--修改公告-->
+    <div ng-show="!main3 ">
+        <ol class="breadcrumb ">
+            <li class="active ">
+                <a class="upc " ng-click="revise(-1) ">
+                    <u>社区公告</u></a>>修改公告</li>
+        </ol>
+        <form ng-submit="revisesub(numjx) ">
+            <table class="add-jx ">
+                <tr>
+                    <td>
+                        <label>标题</label>
+                    </td>
+                    <td>
+                        <div class="col-sm-5 ">
+                            <input type="text " class="form-control " id="firstname " ng-model="rtitlejx ">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>内容</label>
+                    </td>
+                    <td>
+                        <textarea ng-model="rcontentjx " id="firstname " class=test_box contenteditable=true text-indent:4em></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="control-label ">请添加图片</label>
+                    </td>
+                    <td>
+                        <input type="text " size="20 " name="upfile " id="upfile " style="border:1px dotted #ccc " ng-model="rimgjx ">
+                        <input type="button " value="浏览 " onclick="path.click() " style="border:1px solid #ccc;background:#fff ">
+                        <input type="file " hidden="hidden " id="path " onchange="upfile.value=this.value ">
+                    </td>
+                </tr>
+            </table>
+            </br>
+            </br>
+            <div class="controls ">
+                <input type="submit " class="btn btn-primary btn-jx ">
+            </div>
+        </form>
+    </div>
+</div>
+</div>

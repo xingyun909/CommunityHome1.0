@@ -1,0 +1,12 @@
+<div id="jinmain" ng-controller="manageCtrl">
+    <div ui-view="listType" id="jinmenu">
+        <ul id="jintabfirst">
+            <li onclick="cssjx(this)"  class="jintabin ljx" ui-sref="index.manage.notice">社区公告</li>
+            <li onclick="cssjx(this)"  class="ljx" ui-sref="index.manage.order">报修订单</li>
+            <li onclick="cssjx(this)"  class="ljx" ui-sref="index.manage.dianshang_audit">电商申请审核</li>
+            <li onclick="cssjx(this)"  class="ljx" ui-sref="index.manage.account">账号管理</li>
+            <li onclick="cssjx(this)"  class="ljx" ui-sref="index.manage.yezhu_audit">业主审核</li>
+        </ul>
+    </div>
+    <div ui-view class="jinitem" id="jinrepair"></div> 
+</div>
